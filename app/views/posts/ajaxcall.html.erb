@@ -1,0 +1,6 @@
+<% @posts.each do |post| %>
+	<td><%= post.quote %></td>
+	<td><%= post.title %></td>
+	<td><%= raw(post.text) %></td>
+	<td><a href="<%= post.link %>" target="_blank"><%= post.title %></a></td>
+<% end %>
