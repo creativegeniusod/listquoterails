@@ -21,7 +21,7 @@
 	jQuery(document).ready(function(){
 		setInterval(function(){ 
 			jQuery.ajax({	
-			    url: 'http://localhost:3000/ajaxcall',
+			    url: 'http://'+window.location.hostname+':3000/ajaxcall',
 			    method: 'GET',
 			    success: function (data) {
 			        jQuery('#replace_div').html(data);
